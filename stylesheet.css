@@ -1,3 +1,5 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,800,700,600,300);
+
 body {
     margin: 0;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -5,7 +7,6 @@ body {
 
 header {
     width: 100%;
-    outline: inset gray;
     background-color: white;
 }
 
@@ -17,9 +18,12 @@ a:hover {
     text-decoration: underline;
 }
 
+hr {
+    margin-block-end: auto;
+}
+
 .navbar {
     width: 100%;
-    padding: 0 15px;
     margin: 0 auto;
     height: 65px;
     color: #121212;
@@ -27,6 +31,7 @@ a:hover {
 
 .header-left {
     float: left;
+    padding-left: 15px;
 }
 
 .header-right {
@@ -100,7 +105,6 @@ a:hover {
 }
 
 .contact {
-    outline: inset gray;
     padding-bottom: 40px;
 }
 
@@ -152,4 +156,87 @@ a:hover {
 
 .footer i {
     margin: 4px;
+}
+
+@media screen and (max-width: 960px) {
+    .header {
+        position: inherit;
+        width: auto;
+        float: none;
+    }
+
+    .header-left h1 {
+        line-height: 25px;
+        
+    }
+
+    .header-right {
+        width: 100%;
+    }
+
+    .header-right a {
+        margin: 0px 32px;
+        line-height: 25px;
+    }
+
+    .article {
+        width: auto;
+        margin: 0px auto;
+    }
+
+    .article-container {
+        padding: 0px;
+        margin: 0px 15px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .home h1 {
+        font-size: 32px;
+        margin-left: 0px;
+        margin-bottom: 15px;
+    }
+
+    .article-container img {
+        padding-left: 10px;
+        width: 100%;
+        height: 100%;
+        padding-bottom: 20px;
+    }
+
+    .about-bg {
+        display: flex;
+        align-items: center;
+        padding: 45px 18px;
+    }
+
+    .about-bg p {
+        font-size: 10px;
+    }
+
+    .hr {
+        margin-block-end: auto;
+        width: auto;
+    }
+
+    .contact {
+        padding-bottom: 0px;
+    }
+
+    .contact h1 {
+        padding-top: 20px;
+    }
+
+    .form-group {
+        margin-bottom: 1rem;
+    }
+
+    .footer p {
+        margin: 4px 0px;
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    
 }
